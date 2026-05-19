@@ -8,8 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-D8Ut3QgL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Bnvmgo_M.css">
+    <script type="module" crossorigin src="./assets/index-Bbg4AcZ2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-8kFuXDDW.css">
   </head>
   <body class="page">
     <div class="page__content">
@@ -55,6 +55,7 @@
                 minlength="2"
                 maxlength="40"
                 pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+"
+                data-error-message="Разрешены только латинские и кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
             <span class="popup__error user-name-error"></span>
@@ -98,6 +99,7 @@
                 minlength="2"
                 maxlength="30"
                 pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+"
+                data-error-message="Разрешены только латинские и кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
             <span class="popup__error place-name-error"></span>
@@ -184,7 +186,6 @@
       <li class="places__item card">
         <img class="card__image" src="" alt="" />
         <div class="card__control">
-          <button type="button" class="card__control-button card__control-button_type_info"></button>
           <button type="button" class="card__control-button card__control-button_type_delete"></button>
         </div>
         <div class="card__description">
